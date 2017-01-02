@@ -9,6 +9,9 @@ class Being(models.Model):
     routine = models.TextField(blank=True) # Python 
     # weight = models.DecimalField(max_digits=7, decimal_places=3, default=1)
     # color
+    # stamina
+    # speed
+    # image
 
     def __unicode__(self):
         return self.name
@@ -16,3 +19,5 @@ class Being(models.Model):
     def speak(self, message):
         # TODO
         print('{} speaks: {}'.format(self, message))
+
+# TODO: class BeingVocabulary
